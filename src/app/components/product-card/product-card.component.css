@@ -1,0 +1,42 @@
+.productCard {
+  margin: 20px 40px;
+}
+.productImage {
+  height: 200px;
+  width: 250px;
+  cursor: pointer;
+}
+.productName {
+  font-size: 20px;
+  font-weight: bold;
+}
+.productContribution {
+  color: #4f4f4f;
+  font-size: 16px;
+}
+.modalBody {
+  background: #1f4948;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.modalProductColumn {
+  margin: 15px;
+}
+.crossBtn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #1f4948;
+  color: white;
+  border: none;
+  margin: 10px;
+  font-size: 30px;
+}
+.modalProductText {
+  font-weight: 18px;
+}
+.crossBtn:active {
+  border: none;
+}

@@ -1,0 +1,25 @@
+<div class="productCard">
+    <img class="productImage" src={{product.image_url}} (click)= 'open(content)' alt="product">
+    <p class="productName">{{product.name}}</p>
+    <p class="productContribution">{{product.contributed_by}}</p>
+
+    <ng-template #content let-modal>
+        <div class="modalBody">
+            <div class="modalProductColumn">
+                <img class="productImage" src={{product.image_url}} alt="product">
+                <p class="productName">{{product.name}}</p>
+                <p>{{product.contributed_by}}</p>
+            </div>
+            <div class="modalProductColumn">
+                <button type="button" class="crossBtn" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3>Details: </h3>
+                <div class="modalProductText">
+                    <p>{{product.description}}</p>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+</div>
